@@ -1,95 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Jersey</title>
-    <link rel="stylesheet" href="./homestyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@1,300&display=swap"
-        rel="stylesheet">
-    <script defer src="./script.js"></script>
-</head>
+body{
+    margin: 0px; 
+    height: 100vh;
+    background-color:#121212;
+    background-size: cover;
+    background-position: center;
+}
+#first-image, #second-image{
+    height: 100vh;
+    width: 100%;
+    opacity: 80%;
+    padding: 0px;
+}
+#first-image{
+    object-fit: cover;
+    object-position: center;
+}
+#first-text, #second-text{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: rgb(220, 225, 228);
+    font-size: 60px;
+    font-family: Chivo Mono;
+}
+#second-text{
+    top: 46%;
+}
+.third-text{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Chivo Mono;
+    position: absolute;
+    top: 53%;
+    left: 40%;
+}
+.text-effect{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Chivo Mono;
+    text-shadow: 2px 2px #020010;
+}
 
-<body>
-    <div class="navbar">
-        <a href="./home.html">One Jersey</a>
-        <div class="inner-navbar dropdown-menu">
-            <a href="./home.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact-us.html">Contact Us</a>
-        </div>
-        <a href="./login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-            </svg></a>
+#fourth-text{
+    top: 10px;
+}
 
-    </div>
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-container-heading{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Chivo Mono;
+    text-shadow: 2px 2px #020010;
+    padding: 40px;
 
-    <div>
+}
+.third-container-items{
+    display: flex;
+    justify-content: center;
+}
+.third-container-img{
+    height: 600px;
+    padding: 70px;
+}
+.third-container-inner-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        <img id="first-image" class="responsive center" src="./Bayern_Munich_I_Away.png"
-            alt="Bayern munich imahe inside a image slider ">
-        <div class="inner-image-text">
-            <h1 id="first-text" class="text-effect">2023/24</h1>
-            <h1 id="second-text" class="text-effect">Season Kits</h1>
-            <p class="third-text" class="text-effect">New Arrivals</p>
-        </div>
-    </div>
-    <div class="container2" class="hidden">
-        <div>
-            <video id="second-image" autoplay muted loop
-                src="./PUMA AND AC MILAN LAUNCH NEW FOURTH KITS WITH LA BRAND PLEASURES.mp4"></video>
-        </div>
-    </div>
-    <div class="third-container" class="hidden">
-        <div class="third-container-heading">
-            Collections
-        </div>
-        <div class="third-container-items" class="hidden">
-            <div class="third-container-inner-items">
-                <img class="third-container-img" src="./Ef25-SXXkAAn2U0.jpg" alt="">
-                <a href="" class="third-container-inner-items-text">Jersey Set's</a>
-            </div>
-            <div class="third-container-inner-items">
-                <img class="third-container-img" src="./nation-jersey.jpg" alt="">
-                <a href="" class="third-container-inner-items-text">National Kits</a>
-            </div>
-        </div>
-        <div class="third-container-items" class="hidden">
-            <div class="third-container-inner-items">
-                <img class="third-container-img" src="./new collections.jpg" alt="">
-                <a href="" class="third-container-inner-items-text">New Collections</a>
-            </div>
-            <div class="third-container-inner-items">
-                <img class="third-container-img" src="./retro-jersey.jpg" alt="">
-                <a href="" class="third-container-inner-items-text">Retro Kits</a>
-            </div>
-        </div>
-        <div class="third-container-items" class="hidden">
-            <div class="third-container-inner-items">
-                <img class="third-container-img" src="./boots.jpg" alt="">
-                <p style="padding-bottom: 10vh;" class="third-container-inner-items-text">Football Boots</p>
-            </div>
-        </div>
-    </div>
-    <div class="fourth-container" class="hidden">
-        <div class="fourth-container-inner-tags">
-            <a href="./about.html">About</a>
-            <p> | </p>
-            <a href="./contact-us.html">Contact Us</a>
-            <p> | </p>
-            <a href="./services.html">Services</a>
-            <p> | </p>
-            <a href="./services.html">Features</a>
-        </div>
-        <div class="fourth-container-inner-tags-2">
-            <p>© One Jersey Marketing Pvt. Ltd</p>
-        </div>
-    </div>
-</body>
+}
+.third-container-inner-items-text{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: Chivo Mono;
+    text-shadow: 2px 2px #020010;
+}
 
-</html>
+.third-container-inner-items-text:hover{
+    color: rgb(172, 230, 230);
+    transition: all 1s;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.inner-navbar{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: rgb(179, 172, 181);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(156, 170, 238);
+}
+
+.fourth-container{
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 20vh;
+}
+.fourth-container-inner-tags{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fourth-container-inner-tags-2{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+    background-color: #0a0a0a;
+    color: rgb(179, 172, 181);
+
+
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+.inner-image-text{
+    display: flex ;
+
+}
+@media (max-width:900px){
+    #first-text, #second-text{
+        left: 35%;
+    }
+    .third-text{
+        left: 35%;
+    }
+}
+
+@media (max-width:1000px) {
+    #first-image{
+        object-fit: cover;
+        object-position: center;
+    }
+    .inner-navbar{
+        width: 200px;
+    }
+
+    .third-container-items{
+        flex-direction: column;
+    }
+    .container2{
+        height: 75vh;
+    }
+}
+
+@media (max-width: 1150px){
+    .inner-navbar{
+        width: 200px;
+    }
+    .container2{
+        height: 85vh;
+    }
+}
+
+@media(max-width:700px){
+    .container2{
+        height: 50vh;
+    }
+    #first-text, #second-text{
+        left: 27%;
+    }
+    .third-text{
+        left: 27%;
+    }
+}
+@media (max-width:600px){
+    .third-text{
+        /* position: relative; */
+        top: 60%;
+    }
+}
